@@ -63,17 +63,23 @@ int main(void) {
 		printf("%d * %d = %d\n", i,n,i*n);
 	}*/
 
-	for (int i = 0; i < 3; i++)
-	{
+	int i = 0;
+	
 		for (int j = 1; j <= 9; j++) {
 			for (int n = 1; n <= 9; n++)
 			{
-				printf("%d * %d = %d\n", j, n, j * n);
+				printf("%d * %d = %d\n ", j, n, j * n);
+				
+				
 
 			}
-			printf("\n");
+			if (j % 3 == 0) {
+				printf("\t");
+			}
+			
 		}
-	}
+		
+	
 	
 		system("pause");
 		return 0;
